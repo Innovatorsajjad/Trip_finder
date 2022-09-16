@@ -13,8 +13,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
+    <div >
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/" element={<Hotels/>}/>

@@ -34,6 +34,7 @@ const Signin = () => {
                                 <label class="label">
                                     <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
+                                <h6>or</h6>
                                 <div class="btn-group justify-center mt-3">
                                     <button class="btn">Facebook</button>
                                     <button class="btn">Google</button>
