@@ -1,13 +1,12 @@
-import React from 'react';
-
+import link, { Link } from "react-router-dom"
 const Navbar = () => {
     const NevItems = <>
-     <li><a>Hotels</a></li>
-     <li><a>Listing</a></li>
-     <li><a>Agent</a></li>
-     <li><a>Pricing</a></li>
+        <li><Link to="/">Hotels</Link></li>
+        <li><Link to="/listing">Listing</Link></li>
+        <li><Link to="/agent">Agent</Link></li>
+        <li><Link to="/pricing">Pricing</Link></li>
 
-    
+
     </>
     return (
 
@@ -23,14 +22,15 @@ const Navbar = () => {
                 </div>
                 <a class="btn btn-ghost normal-case text-xl"> <img className='p-2' src="https://tripfinder-redq.firebaseapp.com/static/media/logo-alt.980da429.svg" alt="" /> TripFinder</a>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
-                {NevItems}
+                    {NevItems}
                 </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn mx-3 bg-white text-black border-none normal-case hover:text-white">Sign-up</a>
-                <a class="btn bg-teal-500 text-white border-none normal-case">Log-in</a>
+
+                <div class="nav-buttons">
+                    <Link to="/sign_in" class="btn mx-3 bg-white text-black border-none normal-case hover:text-white">Sign-up</Link>
+                    <Link to="/log_in" class="btn bg-teal-500 text-white border-none normal-case">Log-in</Link>
+                </div>
             </div>
         </div>
     );
